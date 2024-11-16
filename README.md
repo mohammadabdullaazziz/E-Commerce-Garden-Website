@@ -1,2 +1,1 @@
-# E-Commerce-Garden-Website
-Website Made With HTML And CSS
+https://garden-e-commerce-website.netlify.app/
