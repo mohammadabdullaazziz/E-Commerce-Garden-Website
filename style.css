@@ -1,0 +1,744 @@
+:root{
+  --pink: #e84393;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-transform: .2s linear;
+} 
+
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+/* header section code start */
+header #toggler{
+  display: none;
+}
+
+header .fa-bars{
+  font-size: 3rem;
+  color: #333;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  border: .1rem solid rgba(0, 0, 0, .3);
+  display: none;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .5);
+}
+
+header .logo{
+  font-size: 3rem;
+  color: #817d7d;
+  font-weight: bolder;
+}
+
+header .logo span{
+  color: var(--pink);
+}
+
+header .navbar a{
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #666;
+  transition: 0.5s;
+}
+
+header .navbar a:hover{
+  color: var(--pink);
+}
+
+header .icon a{
+  font-size: 2.5rem;
+  color: #333;
+  margin-right: 1.5rem;
+}
+
+header .icon a:hover{
+  color: var(--pink);
+}
+/* header section code end */
+
+/* main section code start */
+
+/* section code start */
+section{
+  padding: 2rem 9%;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("image/Rose.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home .content{
+  max-width: 50rem;
+}
+
+.home .content h1{
+  font-size: 6rem;
+  color: #333; 
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.home .content span{
+  font-size: 3.5rem;
+  color: var(--pink);
+}
+
+.home .content p{
+  font-size: 1.8rem;
+  color: black;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.home .content .btn{
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  display: inline-block;
+  border-radius: 5rem;
+  background-color: #333;
+  color: #fff;
+  padding: .9rem 2.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.home .content .btn:hover{
+  background-color: var(--pink);
+  color: #333;
+}
+/* section code end */
+
+/* about section code start */
+.heading-two{
+  font-size: 4rem;
+  color: #333; 
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.heading-two span{
+  color: var(--pink);
+}
+
+.container-row{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.container-video{
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.container-video video{
+  width: 100%;
+  border: 1.5rem solid #fff;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-video h3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  background-color: #fff;
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.container-content{
+  flex: 1 1 40rem;
+}
+
+.container-content h3{
+  font-size: 3rem;
+  color: #333;
+  
+}
+
+.container-content p{
+  font-size: 1.5rem;
+  color: #999;
+  padding: .5rem;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+.container-content .btn{
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  display: inline-block;
+  border-radius: 5rem;
+  background-color: #333;
+  color: #fff;
+  padding: .9rem 2.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container-content .btn:hover{
+  background-color: var(--pink);
+  color: #333;
+}
+/* about section code end */
+
+/* icons section code start */
+.icons-container{
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.icons{
+  background-color: #fff;
+  border: 1rem solid rgba(0, 0, 0, .1);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+
+.icons img{
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.icons h3{
+  color: #333;
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
+}
+
+.icons span{
+  color: #555;
+  font-size: 1.3rem;
+}
+/* icons section code end */
+
+/* products section code start  */
+.heading-four{
+  font-size: 4rem;
+  color: #333; 
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.heading-four span{
+  color: var(--pink);
+}
+
+.products-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.products-box{
+  flex: 1 1 30rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  border: .1rem solid rgba(0, 0, 0, .1);
+  position: relative;
+}
+
+.products-discounts{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: .7rem 1rem;
+  font-size: 2rem;
+  color: var(--pink);
+  background-color: rgba(255, 51, 153, .05);
+  z-index: 1;
+  border-radius: .5rem;
+}
+
+.products-image{
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.products-image img{
+  height: 25rem;
+}
+
+.products-box:hover .products-image img{
+  transform: scale(1.1);
+}
+
+.products-image .products-icons{
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.products-box:hover .products-icons{
+  bottom: 0;
+}
+
+.products-image .products-icons a{
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width: 50%;
+  background-color: var(--pink);
+  color: #fff;
+}
+
+.products-icons .cart-btn{
+  border-left: .1rem solid #fff7;
+  border-right: .1rem solid #fff7;
+  width: 100%;
+}
+
+.products-image .products-icons a:hover{
+  background-color: #333;
+}
+
+.products-content{
+  padding: 2rem;
+  text-align: center;
+}
+
+.products-content h3{
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.products-content .products-price{
+  font-size: 2.5rem;
+  color: var(--pink);
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+
+.products-content .products-price span{
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+/* products section code end  */
+
+/* flower section code start */
+.flowers{
+  background-color: #eee;
+}
+
+.heading-four{
+  font-size: 4rem;
+  color: #333; 
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.heading-four span{
+  color: var(--pink);
+}
+
+.flowers-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.flowers-box{
+  flex: 1 1 30rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  border: .1rem solid rgba(0, 0, 0, .1);
+  position: relative;
+}
+
+.flowers-discounts{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: .7rem 1rem;
+  font-size: 2rem;
+  color: var(--pink);
+  background-color: rgba(255, 51, 153, .05);
+  z-index: 1;
+  border-radius: .5rem;
+}
+
+.flowers-image{
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.flowers-image img{
+  height: 25rem;
+}
+
+.flowers-box:hover .flowers-image img{
+  transform: scale(1.1);
+}
+
+.flowers-image .flowers-icons{
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.flowers-box:hover .flowers-icons{
+  bottom: 0;
+}
+
+.flowers-image .flowers-icons a{
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width: 50%;
+  background-color: var(--pink);
+  color: #fff;
+}
+
+.flowers-icons .cart-btn{
+  border-left: .1rem solid #fff7;
+  border-right: .1rem solid #fff7;
+  width: 100%;
+}
+
+.flowers-image .flowers-icons a:hover{
+  background-color: #333;
+}
+
+.flowers-content{
+  padding: 2rem;
+  text-align: center;
+}
+
+.flowers-content h3{
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.flowers-content .flowers-price{
+  font-size: 2.5rem;
+  color: var(--pink);
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+
+.flowers-content .flowers-price span{
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+/* flower section code end */
+
+/* review section code start  */
+.review-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.container-box{
+  flex: 1 1 30rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  padding: 3rem 2rem;
+  position: relative;
+  border: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.container-box .fa-quote-right{
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 6rem;
+  color: #eee;
+}
+
+.container-box .container-stars i{
+  color: var(--pink);
+  font-size: 2rem;
+}
+
+.container-box .container-stars p{
+  color: #999;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-top: 2rem;
+}
+
+.container-box .user{
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.container-box .user img{
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.container-box .user h3{
+  font-size: 2rem;
+  color: #333;
+}
+
+.container-box .user span{
+  font-size: 1.5rem;
+  color: #999;
+}
+/* review section code end  */
+
+/* contact section code start */
+.container-row{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.container-row form{
+  flex: 1 1 40rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 .5rem 1.5rem  rgba(0, 0, 0, .5);
+  border: .1rem solid  rgba(0, 0, 0, .2);
+  background-color: #fff;
+  border-radius: .5rem;
+}
+
+.container-image{
+  flex: 1 1 40rem;
+}
+
+.container-image img{
+  width: 100%;
+}
+
+.container-row form .contact-box{
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  border: .1rem solid rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  margin: .7rem 0;
+  width: 100%;
+}
+
+.container-row form .contact-box:focus{
+  border-color: var(--pink);
+}
+
+.container-row form textarea{
+  height: 15rem;
+  resize: none;
+}
+
+.container-row form .btn{
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  display: inline-block;
+  border-radius: 5rem;
+  background-color: #333;
+  color: #fff;
+  padding: .9rem 2.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container-row form .btn:hover{
+  background-color: var(--pink);
+  color: #333;
+}
+/* contact section code end */
+/* main section code end */
+
+/* footer section code start */
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.footer-box{
+  flex: 1 1 25rem;
+}
+
+.footer-box h3{
+  font-size: 2.5rem;
+  color: #333;
+  padding: 1rem 0;
+}
+
+
+.footer-box a{
+  display: block;
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.footer-box a:hover{
+  color: var(--pink);
+  text-decoration: underline;
+}
+
+footer .credit{
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #333;
+  border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+footer .credit span{
+  color: var(--pink);
+}
+/* footer section code end */
+
+
+/* responsive code start */
+@media screen and (max-width: 991px){
+  html{
+   font-size: 55%;
+  }
+
+  header{
+    padding: 2rem;
+  }
+
+ /* section code start */
+ section{
+  padding: 2rem;
+ }
+
+ .home{
+  background-position: left;
+ }
+ /* section code end */
+  
+}
+
+
+
+@media screen and (max-width: 768px){
+ /* header setion code start */
+  header .fa-bars{
+   display: block;
+  }
+
+  header .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #toggler:checked ~ .navbar{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    display: block;
+  }
+ /* header setion code end */
+
+ /* section code start */
+ .home .content h1{
+    font-size: 5rem;
+ }
+
+ .home .content span{
+    font-size: 2.9rem;
+ }
+ /* section code end */
+ 
+ /* icons section code start  */
+ .icons h3{
+  font-size: 2rem;
+}
+
+.icons span{
+  font-size: 1.7rem;
+}
+ /* icons section code end  */
+}
+
+@media screen and (max-width: 450px){
+  html{
+   font-size: 50%;
+  }
+  /* about section code start */
+  .heading-two{
+    font-size: 3rem;
+  }
+  /* about section code end */
+
+}
+/* responsive code end */
